@@ -5,7 +5,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET
+    @GET(value = "significant_month.geojson")
     suspend fun getSignificantQuakesByMonth() : Response<Earthquakes>
 
     @GET
